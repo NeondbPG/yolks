@@ -22,6 +22,9 @@
 
 FROM        --platform=$TARGETOS/$TARGETARCH azul/prime:21
 
+ENV TZ=Europe/Paris \
+    DEBIAN_FRONTEND=noninteractive
+
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
